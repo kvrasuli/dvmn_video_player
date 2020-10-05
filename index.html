@@ -16,6 +16,8 @@
         flex-grow: 1;
     }
     .button-panel {
+        display: flex;
+        flex-direction: row;
         background-color: black;
     }
     button {
@@ -31,6 +33,9 @@
     }
     .fa {
         color: white;
+    }
+    .button-filler {
+        flex-grow: 1;
     }
   </style>
 </head>
@@ -49,6 +54,10 @@
       </button>
       <button class="js-volume-button">
         <i class="fa fa-volume-up" aria-hidden="true"></i>
+      </button>
+      <div class="button-filler"></div>
+      <button class="js-fullscreen-button">
+        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
       </button>
     </div>
   </div>
