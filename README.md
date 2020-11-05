@@ -1,6 +1,6 @@
 # Video player
 
-This is just a simple video player. Check it out [here](https://kvrasuli.github.io/dvmn_video_player/)
+This is just a simple video player. Check it out [here](https://kvrasuli.github.io/video_player/)
 
 
 ### What it looks like:
