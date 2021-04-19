@@ -16,7 +16,7 @@
     .player-container {
         flex-grow: 1;
     }
-    .button-panel {
+    .player-button-panel {
         display: flex;
         flex-direction: row;
         background-color: black;
@@ -34,7 +34,7 @@
         height: 15px;
         width: 15px;
     }
-    .button-filler {
+    .player-button-filler {
         flex-grow: 1;
     }
   </style>
@@ -42,7 +42,7 @@
 <body>
   <div id="player" class="video-player">
     <div class="js-video-container player-container"></div>
-    <div class="button-panel">
+    <div class="player-button-panel">
       <button class="js-play-button player-button">
         <i class="fa fa-play player-icon" aria-hidden="true"></i>
       </button>
@@ -55,7 +55,7 @@
       <button class="js-mute-button player-button">
         <i class="fa fa-volume-up player-icon" aria-hidden="true"></i>
       </button>
-      <div class="button-filler"></div>
+      <div class="player-button-filler"></div>
       <button class="js-fullscreen-button player-button">
         <i class="fa fa-arrows-alt player-icon" aria-hidden="true"></i>
       </button>
