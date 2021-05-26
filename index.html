@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style type="text/css">
     .video-player {
         display: flex;
@@ -39,6 +41,13 @@
     .player-button-filler {
         flex-grow: 1;
     }
+    .player-text {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 7px;
+        padding-left: 3px;
+        padding-right: 1px;
+    }
   </style>
 </head>
 <body>
@@ -57,7 +66,13 @@
       <button class="js-mute-button player-button">
         <i class="fa fa-volume-up player-icon" aria-hidden="true"></i>
       </button>
+      <div class="player-text">
+        <span class="js-current-time"></span>
+      </div>
       <div class="player-button-filler"></div>
+      <div class="player-text">
+        <span class="js-duration"></span>
+      </div>
       <button class="js-fullscreen-button player-button">
         <i class="fa fa-arrows-alt player-icon" aria-hidden="true"></i>
       </button>
