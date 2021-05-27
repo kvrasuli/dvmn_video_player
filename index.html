@@ -48,6 +48,36 @@
         padding-left: 3px;
         padding-right: 1px;
     }
+    .player-progress-bar {
+      height: 5px;
+      border-radius: 5px;
+      background-color: grey; 
+      margin-top: 14px; 
+      margin-left: 8px;  
+      margin-right: 450px; 
+      border-radius: 5px; 
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+    }
+    .player-progress-slider {
+      height: 5px;
+      border-radius: 5px;
+      background-color: red;
+    }
+    .player-dot {
+      height: 8px;
+      width: 8px;
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
+      border-style: solid;
+      border-width: 3px;
+      border-color: white;
+      box-shadow: 0 0 3px rgba(0,0,0,1);
+      margin-bottom: -2px;
+      margin-left: -9px;
+    }
   </style>
 </head>
 <body>
@@ -69,7 +99,12 @@
       <div class="player-text">
         <span class="js-current-time"></span>
       </div>
-      <div class="player-button-filler"></div>
+      <div class="player-button-filler">
+        <div class="js-progress player-progress-bar">
+          <div class="js-progress-slider player-progress-slider"></div> 
+          <div><span class="player-dot"></span></div>      
+        </div>       
+      </div>    
       <div class="player-text">
         <span class="js-duration"></span>
       </div>
